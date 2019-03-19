@@ -8,7 +8,14 @@
 struct winsize TERMINAL_WINDOW_SIZE;
 int HAS_BEEN_INITIALIZATED = 0;
 
+struct game_area{
 
+  unsigned int top_row; // superior limit of the game area
+  unsigned int bottom_row; // inferior limit of the game area
+  unsigned int left_col; // left side limit of the game area
+  unsigned int right_col; // right side limit of the game area
+
+};
 
 /**
  * show_terminal_size()
